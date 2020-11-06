@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CFC3914C2555D30100B3CC99 /* Raleway-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFC3914A2555D30100B3CC99 /* Raleway-Italic-VariableFont_wght.ttf */; };
+		CFC3914D2555D30100B3CC99 /* Raleway-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFC3914B2555D30100B3CC99 /* Raleway-VariableFont_wght.ttf */; };
 		CFDE036B2551D37700B3A5C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDE036A2551D37700B3A5C8 /* AppDelegate.swift */; };
 		CFDE036D2551D37700B3A5C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDE036C2551D37700B3A5C8 /* SceneDelegate.swift */; };
 		CFDE036F2551D37700B3A5C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDE036E2551D37700B3A5C8 /* ViewController.swift */; };
@@ -35,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CFC391492555D2E100B3CC99 /* FredokaOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FredokaOne-Regular.ttf"; sourceTree = "<group>"; };
+		CFC3914A2555D30100B3CC99 /* Raleway-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		CFC3914B2555D30100B3CC99 /* Raleway-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		CFDE03672551D37700B3A5C8 /* royal-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "royal-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFDE036A2551D37700B3A5C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFDE036C2551D37700B3A5C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +81,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CFC391482555D20000B3CC99 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CFC3914A2555D30100B3CC99 /* Raleway-Italic-VariableFont_wght.ttf */,
+				CFC3914B2555D30100B3CC99 /* Raleway-VariableFont_wght.ttf */,
+				CFC391492555D2E100B3CC99 /* FredokaOne-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		CFDE035E2551D37700B3A5C8 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +114,7 @@
 		CFDE03692551D37700B3A5C8 /* royal-ios */ = {
 			isa = PBXGroup;
 			children = (
+				CFC391482555D20000B3CC99 /* Fonts */,
 				CFDE036A2551D37700B3A5C8 /* AppDelegate.swift */,
 				CFDE036C2551D37700B3A5C8 /* SceneDelegate.swift */,
 				CFDE036E2551D37700B3A5C8 /* ViewController.swift */,
@@ -231,9 +247,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFC3914D2555D30100B3CC99 /* Raleway-VariableFont_wght.ttf in Resources */,
 				CFDE03772551D38400B3A5C8 /* LaunchScreen.storyboard in Resources */,
 				CFDE03742551D38400B3A5C8 /* Assets.xcassets in Resources */,
 				CFDE03722551D37700B3A5C8 /* Main.storyboard in Resources */,
+				CFC3914C2555D30100B3CC99 /* Raleway-Italic-VariableFont_wght.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
