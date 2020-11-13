@@ -8,49 +8,41 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var lblname: UILabel!
-    @IBOutlet weak var lblid: UILabel!
-    @IBOutlet weak var lblphone: UILabel!
-    @IBOutlet weak var lblImage: UIImageView!
-    @IBOutlet weak var scrollbtn: UIScrollView!
     
-    @IBAction func clickRafaela(_ sender: Any) {
-        lblImage.image = UIImage(named: "rafaela")!
-        lblname.text = "Rafaela Abdon"
-        lblid.text = "321"
-        lblphone.text = "77 9999-9999"
-    }
-    @IBAction func clickGabriel(_ sender: Any) {
-        lblImage.image = UIImage(named: "gabriel")!
-        lblname.text = "Gabriel Leão"
-        lblid.text = "321"
-        lblphone.text = "77 9999-9999"
-    }
+    //Variaveis de requisicao
+    var user:Contact!
+    var contacts:[Contact]!
+    var transactions:[Transaction]!
+    var report:TransactionReport!
     
-    @IBAction func clickGleisson(_ sender: Any) {
-        lblImage.image = UIImage(named: "gleisson")!
-        lblname.text = "Gleisson Carvalho"
-        lblid.text = "321"
-        lblphone.text = "77 9999-9999"
-    }
-    @IBAction func clickIanka(_ sender: Any) {
-        lblImage.image = UIImage(named: "ianka")!
-        lblname.text = "Ianka Ferraz"
-        lblid.text = "321"
-        lblphone.text = "77 9999-9999"
-    }
-    @IBAction func clickIsaac(_ sender: Any) {
-        lblImage.image = UIImage(named: "isaac")!
-        lblname.text = "Isaac Matos"
-        lblid.text = "321"
-        lblphone.text = "77 9999-9999"
-    }
+    //Pagina inicial
+    @IBOutlet weak var userAvatar: UIImageView!;
+    @IBOutlet weak var userName: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        //Requisicoes da api
+        getUser{
+            (data) in
+                self.user = data
+        }
+        getContacts{
+            (data) in
+                self.contacts = data
+        }
+        getTransactions{
+            (data) in
+                self.transactions = data
+        }
+        getReport{
+            (data) in
+                self.report = data
+        }
     }
+    
+    
+    
+
 
 
 }
